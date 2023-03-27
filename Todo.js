@@ -70,33 +70,35 @@ function filterTodo(e) {
 	// console.log(filter);
 
 	filter.forEach((todo) => {
-		console.log(todo);
+		// console.log(todo);
 
-		if (todo.classList.contains("todo_lists")) {
-			todo.style.color = "pink";
+		if (todo.classList) {
+			if(todo.classList.contains("todo_lists")){
+				switch(e.target.value){
+
+					case "all":
+						todo.style.display = "flex";
+						break;
+		
+					case "completed":
+						if(todo.classList.contains("cross")){
+							todo.style.display = "flex";
+						}else{
+							todo.style.display = "none";
+						}
+						break;
+		
+					case "pending":
+						if(!todo.classList.contains("cross")){
+							todo.style.display = "flex";
+						}else{
+							todo.style.display = "none";
+						}
+						break;
+				}
+			}
 		}
 
-		// switch(e.target.value){
-
-		// 	case "all":
-		// 		todo.style.display = "flex";
-		// 		break;
-
-		// 	case "completed":
-		// 		if(todo.classList.contains("todo_lists")){
-		// 			todo.style.display = "flex";
-		// 		}else{
-		// 			todo.style.display = "none";
-		// 		}
-		// 		break;
-
-		// 	case "pending":
-		// 		if(!todo.classList.contains("todo_lists")){
-		// 			todo.style.display = "flex";
-		// 		}else{
-		// 			todo.style.display = "none";
-		// 		}
-		// 		break;
-		// }
+		
 	});
 }
