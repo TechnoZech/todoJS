@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Todo.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <section class="todo_section">
+        <div class="todo_container">
+
+            <h1 class="todo_heading">Todo app &nbsp<i class="fa-solid fa-pen-clip"></i></h1>
+
+            <div class="todo_form">
+                <input class="todo_input" type="text" placeholder="Enter todo..."></input>
+                <div class="submit_btn"><i class="fa-solid fa-plus"></i></div>
+                <select class="options">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+            </div>
+
+            <div class="todo_lists_container">
+        <!-- Element need to be created here -->
+                <div class="todo_lists cross">
+                    <p class="todo_item">one</p>
+                    <div class="todo_check"><i class="fa-solid fa-check"></i></div>
+                    <div class="todo_delete"><i class="fa-solid fa-trash"></i></div>
+                </div>
+
+                <div class="todo_lists">
+                    <p class="todo_item">two</p>
+                    <div class="todo_check"><i class="fa-solid fa-check"></i></div>
+                    <div class="todo_delete"><i class="fa-solid fa-trash"></i></div>
+                </div>
+
+                <div class="todo_lists cross">
+                    <p class="todo_item">three</p>
+                    <div class="todo_check"><i class="fa-solid fa-check"></i></div>
+                    <div class="todo_delete"><i class="fa-solid fa-trash"></i></div>
+                </div>
+      
+            </div>
+        </div>
+    </section>
+    <script src="./Todo.js"></script>
+</body>
+</html>
+
+<!-- <div class="todo_lists">
+    <p class="todo_item">item1</p>
+    <div class="todo_check"><i class="fa-solid fa-check"></i></div>
+    <div class="todo_delete"><i class="fa-solid fa-trash"></i></div>
+</div> -->
